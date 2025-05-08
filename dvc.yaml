@@ -1,0 +1,14 @@
+stages:
+  pipeline:
+    cmd: python main.py
+    deps:
+      - main.py
+      - src/training/process_data.py
+      - src/training/train.py
+      - src/training/evaluate.py
+      - data/raw/titanic.csv
+      - config/config.yaml
+    outs:
+      - models/
+      - reports/
+      - data/processed/

@@ -1,0 +1,45 @@
+schema: '2.0'
+stages:
+  pipeline:
+    cmd: python main.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: d590473712e7a4f8b57787aa25bf85be
+      size: 259
+    - path: data/raw/titanic.csv
+      hash: md5
+      md5: 2309cc5f04782ed9bb6016d9f4e381cf
+      size: 61194
+    - path: main.py
+      hash: md5
+      md5: 28ee40ab5b96f6671cb076340b07643b
+      size: 1775
+    - path: src/training/evaluate.py
+      hash: md5
+      md5: f78e619304945e5843b92d92b43228c9
+      size: 2714
+    - path: src/training/process_data.py
+      hash: md5
+      md5: e886e869b1d42d669093dc56f6799de4
+      size: 2136
+    - path: src/training/train.py
+      hash: md5
+      md5: ed1bdf584ee73dab40a5f7245c92d78e
+      size: 5135
+    outs:
+    - path: data/processed/
+      hash: md5
+      md5: 47401cc870b7b41aec108ea08b2de2a3.dir
+      size: 48646
+      nfiles: 2
+    - path: models/
+      hash: md5
+      md5: 0b827d3be57e39cf83a8795369af1858.dir
+      size: 981738
+      nfiles: 3
+    - path: reports/
+      hash: md5
+      md5: 2f64efbdd16689f33497b62c75b473d1.dir
+      size: 2218
+      nfiles: 2
