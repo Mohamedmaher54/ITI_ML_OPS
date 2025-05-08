@@ -1,15 +1,12 @@
-# config/config.yaml
 process:
   file_name: Titanic
   id_col: PassengerId
   target_col: Survived
   columns_to_drop: []
   drop_missing_threshold: 0.3
-
 train:
   model_name: Titanic_Classifier
-
 evaluate:
   models:
-    - random_forest
-    - xgboost
+  - RandomForest
+  - XGBoost

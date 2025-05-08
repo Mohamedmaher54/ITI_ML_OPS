@@ -1,0 +1,6 @@
+defaults: []
+file_name: "titanic"
+id_col: "PassengerId"
+target_col: "Survived"
+columns_to_drop: ["Name", "Ticket", "Cabin"]
+drop_missing_threshold: 0.4
